@@ -251,7 +251,7 @@ rem
 rem function console
 rem
 :console
-java -DworkingDir="%~dp0.." -Djava.util.logging.config.file=conf/windows-wrapper-logging.properties -DconfigFile=%configFile% %classpath% %mainclass% -jar %~dps0%wrapperJarFilename%
+"%javaPath%\bin\java.exe" -DworkingDir="%~dp0.." -Djava.util.logging.config.file=conf/windows-wrapper-logging.properties -DconfigFile=%configFile% %classpath% %mainclass% -jar %~dps0%wrapperJarFilename%
 goto:eof
 
 rem end function console
